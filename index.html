@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Blockchain Supply Chain Tracker</h1>
+    <div id="productForm">
+        <h2>Add Product</h2>
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" required>
+        <label for="origin">Product Origin:</label>
+        <input type="text" id="origin" required>
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+    <div id="verifyForm">
+        <h2>Verify Product</h2>
+        <label for="productId">Product ID:</label>
+        <input type="number" id="productId" required>
+        <button onclick="verifyProduct()">Verify Product</button>
+    </div>
+    <div id="productInfo">
+        <h2>Product Information</h2>
+        <label for="infoProductId">Product ID:</label>
+        <input type="number" id="infoProductId" required>
+        <button onclick="getProduct()">Get Product Info</button>
+        <pre id="productDetails"></pre>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
